@@ -7,6 +7,7 @@ const runInitializer = (name) => {
 
 [
   "initLanguageSwitcher",
+  "initRouter",
   "initMenu",
   "initContactForm",
   "initSkillSvgInlining",

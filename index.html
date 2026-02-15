@@ -47,7 +47,7 @@
     </nav>
   </div>
   
-  <main>
+  <main id="home-main">
     <section class="hero section">
       <a class="hero-side" href="#contact-form" aria-label="Zum Kontaktformular springen">Yalcin_Fatih@web.de</a>
       <div class="hero-content">
@@ -321,7 +321,7 @@
         <label class="privacy-row">
           <input type="checkbox" name="privacy" required />
           <span data-i18n-html="privacy_text_html">
-            Ich habe die <a class="privacy-link" href="datenschutz.html">Datenschutzerklaerung</a> gelesen und stimme zu.
+            Ich habe die <a class="privacy-link" href="#/datenschutz">Datenschutzerklaerung</a> gelesen und stimme zu.
           </span>
         </label>
         <span class="field-error" data-error-for="privacy" aria-live="polite"></span>
@@ -345,12 +345,90 @@
         </div>
       </footer>
       <nav class="legal-mini" aria-label="Rechtliches">
-        <a href="impressum.html" data-i18n="legal_imprint">Impressum</a>
+        <a href="#/impressum" data-i18n="legal_imprint">Impressum</a>
         <span>|</span>
-        <a href="datenschutz.html" data-i18n="legal_privacy">Datenschutz</a>
+        <a href="#/datenschutz" data-i18n="legal_privacy">Datenschutz</a>
       </nav>
     </section>
   </main>
+
+  <section class="legal-main section" id="legal-main-view" hidden aria-hidden="true">
+    <h1 data-legal-screen="impressum" data-i18n-html="imprint_h1_html">Impressum</h1>
+
+    <section class="legal-block" data-legal-screen="impressum">
+      <h2 data-i18n="imprint_section_1_title">Angaben gemaess Paragraph 5 TMG</h2>
+      <p data-i18n-html="imprint_section_1_body_html">Fatih Yalcin<br />Nagelschmiedgasse 24b<br />50827 Köln<br />Deutschland</p>
+    </section>
+
+    <section class="legal-block" data-legal-screen="impressum">
+      <h2 data-i18n="imprint_section_2_title">Kontakt</h2>
+      <p data-i18n-html="imprint_section_2_body_html">Telefon: 01622311158<br />E-Mail: Yalcin_Fatih@web.de</p>
+    </section>
+
+    <section class="legal-block" data-legal-screen="impressum">
+      <h2 data-i18n="imprint_section_3_title">Verantwortlich fuer den Inhalt</h2>
+      <p data-i18n-html="imprint_section_3_body_html">Fatih Yalcin<br />Nagelschmiedgasse 24b<br />50827 Köln</p>
+    </section>
+
+    <section class="legal-block" data-legal-screen="impressum">
+      <h2 data-i18n="imprint_section_4_title">Haftungshinweis</h2>
+      <p data-i18n="imprint_section_4_body">Trotz sorgfaeltiger inhaltlicher Kontrolle uebernehmen wir keine Haftung fuer die Inhalte externer Links. Fuer den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich.</p>
+    </section>
+
+    <h1 data-legal-screen="datenschutz" data-i18n-html="privacy_h1_html" hidden>Datenschutz-<br />erklaerung</h1>
+
+    <section class="legal-block" data-legal-screen="datenschutz" hidden>
+      <h2 data-i18n="privacy_section_1_title">1. Allgemeine Hinweise</h2>
+      <p data-i18n="privacy_section_1_body">Der Schutz deiner persoenlichen Daten ist wichtig. Diese Webseite verarbeitet nur die Daten, die fuer den Betrieb und die Kontaktaufnahme erforderlich sind.</p>
+    </section>
+
+    <section class="legal-block" data-legal-screen="datenschutz" hidden>
+      <h2 data-i18n="privacy_section_2_title">2. Verantwortliche Stelle</h2>
+      <p data-i18n-html="privacy_section_2_body_html">Fatih Yalcin<br />Nagelschmiedgasse 24b<br />50827 Köln<br />E-Mail: Yalcin_Fatih@web.de</p>
+    </section>
+
+    <section class="legal-block" data-legal-screen="datenschutz" hidden>
+      <h2 data-i18n="privacy_section_3_title">3. Verarbeitung im Kontaktformular</h2>
+      <p data-i18n="privacy_section_3_body">Wenn du das Kontaktformular nutzt, werden Name, E-Mail-Adresse und Nachricht verarbeitet, um deine Anfrage zu beantworten. Die Verarbeitung erfolgt auf Grundlage deiner Einwilligung.</p>
+    </section>
+
+    <section class="legal-block" data-legal-screen="datenschutz" hidden>
+      <h2 data-i18n="privacy_section_4_title">4. Speicherdauer</h2>
+      <p data-i18n="privacy_section_4_body">Daten aus Kontaktanfragen werden nur so lange gespeichert, wie es fuer die Bearbeitung der Anfrage erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.</p>
+    </section>
+
+    <section class="legal-block" data-legal-screen="datenschutz" hidden>
+      <h2 data-i18n="privacy_section_5_title">5. Deine Rechte</h2>
+      <p data-i18n="privacy_section_5_body">Du hast das Recht auf Auskunft, Berichtigung, Loeschung, Einschraenkung der Verarbeitung, Datenuebertragbarkeit sowie Widerspruch gegen die Verarbeitung deiner Daten.</p>
+    </section>
+  </section>
+
+  <div class="legal-jump-wrap" id="legal-jump-wrap" hidden aria-hidden="true">
+    <a class="legal-jump-home" href="#/" aria-label="Zur Hauptseite zum Hero" data-i18n-aria="aria_back_to_home">
+      <img src="img/icons/7. arrow.svg" alt="" aria-hidden="true" />
+    </a>
+  </div>
+
+  <footer class="contact legal-contact" id="legal-footer" hidden aria-hidden="true">
+    <div class="contact-footer">
+      <p>[FY] &copy; 2026<br />Fatih Yalcin</p>
+      <div class="footer-actions">
+        <div class="socials">
+          <a class="social-icon" href="https://github.com/86c29vxm24-hue" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-i18n-aria="aria_social_github">
+            <img src="img/icons/github-button.svg" alt="" />
+          </a>
+          <a class="social-icon" href="mailto:Yalcin_Fatih@web.de?subject=Portfolio%20Anfrage" aria-label="Email" data-i18n-aria="aria_social_email">
+            <img src="img/icons/email-button.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <nav class="legal-mini" aria-label="Rechtliches">
+      <a href="#/impressum" data-i18n="legal_imprint">Impressum</a>
+      <span>|</span>
+      <a href="#/datenschutz" data-i18n="legal_privacy">Datenschutz</a>
+    </nav>
+  </footer>
 
   <script src="js/language.js"></script>
   <script src="js/menu.js"></script>
@@ -359,6 +437,7 @@
   <script src="js/section-arrows.js"></script>
   <script src="js/scroll-top.js"></script>
   <script src="js/portfolio.js"></script>
+  <script src="js/router.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
