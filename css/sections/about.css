@@ -10,17 +10,22 @@
 
 .about-title {
   grid-area: title;
-  width: min(100%, 619px);
+  width: fit-content;
   min-height: 78px;
-  margin: 0 auto;
-  justify-self: center;
-  text-align: center;
+  margin: 0;
+  justify-self: start;
+  margin-left: clamp(26px, 8vw, 170px);
+  text-align: left;
   font-family: "Syne", "Arial Black", sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: clamp(3rem, 6.2vw, 78px);
   line-height: 1;
   letter-spacing: 0.01em;
+}
+
+.about-title .section-title-link {
+  white-space: nowrap;
 }
 
 .about-copy {
