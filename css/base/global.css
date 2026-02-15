@@ -34,6 +34,10 @@ main {
   overflow: hidden;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .section {
   width: min(100%, var(--max-width));
   margin: 0 auto;
