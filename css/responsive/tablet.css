@@ -98,7 +98,7 @@
 
   .about-photo {
     --about-frame-offset: 10px;
-    justify-self: start;
+    justify-self: end;
     transform: none;
     width: min(100%, 360px);
   }
@@ -109,7 +109,8 @@
   }
 
   .about .primary-btn {
-    margin-left: 0;
+    display: block;
+    margin: 0 auto;
   }
 
   .project-row,
