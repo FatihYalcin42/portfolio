@@ -190,6 +190,7 @@
   .project-row .project-hover-info {
     order: 3;
     display: block;
+    margin-top: clamp(10px, 1.8vw, 18px);
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
