@@ -182,6 +182,9 @@
   .project-card-image-right .project-hover-arrow {
     left: 50%;
     right: auto;
+    --project-arrow-flip: 1;
+    --project-arrow-base-rotate: 18deg;
+    --project-arrow-active-rotate: 135deg;
   }
 
   .project-row .project-hover-info {
