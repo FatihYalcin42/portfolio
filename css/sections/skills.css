@@ -50,7 +50,7 @@
   gap: 0.45rem;
   flex-wrap: nowrap;
   margin: 0;
-  font-size: clamp(1.05rem, 1.95vw, 2rem);
+  font-size: clamp(0.95rem, 1.75vw, 1.82rem);
   line-height: 1.2;
   color: var(--ink);
 }
@@ -85,6 +85,7 @@
   text-decoration: none;
   position: relative;
   font-weight: 500;
+  font-size: 0.86em;
   transition: color 120ms ease;
 }
 
