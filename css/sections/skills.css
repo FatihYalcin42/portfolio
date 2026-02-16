@@ -61,6 +61,25 @@
   margin-right: 0.5rem;
 }
 
+@keyframes skills-contact-icon-slide {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  45% {
+    transform: translateX(28px);
+    opacity: 0;
+  }
+  46% {
+    transform: translateX(-28px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .skills-bottom-contact {
   color: var(--contact-accent);
   text-decoration: none;
@@ -90,6 +109,10 @@
 .skills-bottom-contact:hover::after,
 .skills-bottom-contact:focus-visible::after {
   transform: scaleX(1);
+}
+
+.skills-bottom-copy img:hover {
+  animation: skills-contact-icon-slide 260ms ease both;
 }
 
 .skills-bottom-contact:focus-visible {
