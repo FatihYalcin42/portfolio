@@ -27,7 +27,7 @@
 
   .hero {
     display: block;
-    min-height: max(530px, calc(100svh - 22px));
+    min-height: max(500px, calc(100svh - 94px));
     padding-top: 18px;
     padding-bottom: 24px;
   }
@@ -83,9 +83,10 @@
     position: absolute;
     top: auto;
     right: 20px;
-    bottom: 18px;
+    bottom: max(18px, env(safe-area-inset-bottom));
     transform: none;
     margin-top: 0;
+    z-index: 3;
   }
 
   .scroll-hint img {
@@ -361,7 +362,7 @@
   .hero {
     display: grid;
     place-items: center;
-    min-height: max(620px, calc(100svh - 22px));
+    min-height: max(560px, calc(100svh - 94px));
   }
 
   .hero-content {
