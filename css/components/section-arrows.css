@@ -1,14 +1,12 @@
 .section-arrow {
   --arrow-flip: 1;
   --arrow-anchor-shift: 0px;
-  --arrow-hover-shift: 10px;
-  --arrow-hover-scale: 1.06;
   --arrow-active-shift: 34px;
   --arrow-active-scale: 1.24;
   width: min(100%, var(--max-width));
-  margin: -2px auto -14px;
-  padding: 0 24px;
-  height: 108px;
+  margin: 12px auto 18px;
+  padding: 0 40px;
+  height: 128px;
   display: flex;
   align-items: flex-start;
 }
@@ -47,28 +45,16 @@
 .section-arrow-right {
   justify-content: flex-end;
   --arrow-flip: -1;
-  --arrow-hover-shift: -10px;
   --arrow-active-shift: -34px;
 }
 
 .about-arrow {
-  --arrow-anchor-shift: clamp(-340px, -24vw, -200px);
-  padding-right: 74px;
+  --arrow-anchor-shift: clamp(-420px, -28vw, -260px);
+  padding-right: 112px;
 }
 
 .portfolio-arrow {
-  --arrow-anchor-shift: clamp(180px, 14vw, 260px);
-}
-
-.section-arrow-link:hover .section-arrow-icon,
-.section-arrow-link:focus-visible .section-arrow-icon {
-  transform: translateX(var(--arrow-hover-shift)) scale(var(--arrow-hover-scale))
-    scaleX(var(--arrow-flip));
-}
-
-.section-arrow-link:active .section-arrow-icon {
-  transform: translateX(calc(var(--arrow-hover-shift) * 1.25)) scale(1.03)
-    scaleX(var(--arrow-flip));
+  --arrow-anchor-shift: clamp(240px, 18vw, 340px);
 }
 
 .section-arrow.is-active .section-arrow-icon {

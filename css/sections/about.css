@@ -1,10 +1,10 @@
 .about {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 460px);
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 500px);
   grid-template-areas:
     "title title"
     "copy photo";
-  gap: 22px 12px;
+  gap: 32px 72px;
   align-items: start;
 }
 
@@ -64,7 +64,7 @@
   --about-frame-offset: 16px;
   grid-area: photo;
   justify-self: start;
-  transform: translateX(-20px);
+  transform: translateX(-4px);
   width: min(100%, 430px);
   aspect-ratio: 1 / 1;
   position: relative;

@@ -89,7 +89,7 @@
       "title"
       "copy"
       "photo";
-    gap: 22px;
+    gap: 30px;
   }
 
   .about-photo-img {
@@ -115,7 +115,7 @@
   .project-row,
   .project-row.reverse {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 24px;
     margin: 0 0 104px;
   }
 
@@ -244,16 +244,14 @@
   }
 
   .section-arrow {
-    --arrow-hover-shift: 8px;
-    --arrow-active-shift: 24px;
+    --arrow-active-shift: 30px;
     --arrow-active-scale: 1.2;
-    height: 60px;
-    margin: -10px auto -6px;
+    height: 74px;
+    margin: 4px auto 10px;
   }
 
   .section-arrow-right {
-    --arrow-hover-shift: -8px;
-    --arrow-active-shift: -24px;
+    --arrow-active-shift: -30px;
   }
 
   .section-arrow-icon {
@@ -262,12 +260,12 @@
   }
 
   .about-arrow {
-    --arrow-anchor-shift: clamp(-170px, -22vw, -108px);
-    padding-right: 24px;
+    --arrow-anchor-shift: clamp(-220px, -24vw, -140px);
+    padding-right: 40px;
   }
 
   .portfolio-arrow {
-    --arrow-anchor-shift: clamp(92px, 14vw, 148px);
+    --arrow-anchor-shift: clamp(120px, 16vw, 188px);
   }
 
   .skills-frame {

@@ -142,23 +142,22 @@
   }
 
   .section-arrow {
-    --arrow-hover-shift: 7px;
-    --arrow-active-shift: 18px;
+    --arrow-active-shift: 22px;
     --arrow-active-scale: 1.16;
+    margin: 8px auto 12px;
   }
 
   .section-arrow-right {
-    --arrow-hover-shift: -7px;
-    --arrow-active-shift: -18px;
+    --arrow-active-shift: -22px;
   }
 
   .about-arrow {
-    --arrow-anchor-shift: clamp(-74px, -22vw, -36px);
-    padding-right: 16px;
+    --arrow-anchor-shift: clamp(-94px, -24vw, -48px);
+    padding-right: 28px;
   }
 
   .portfolio-arrow {
-    --arrow-anchor-shift: clamp(34px, 12vw, 62px);
+    --arrow-anchor-shift: clamp(52px, 16vw, 88px);
   }
 
   .skills-title {
