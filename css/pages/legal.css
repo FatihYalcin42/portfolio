@@ -1,3 +1,10 @@
+body.legal-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
 .legal-mini {
   width: min(100%, var(--max-width));
   margin: 0 auto;
@@ -15,6 +22,7 @@
 }
 
 .legal-main {
+  flex: 1 0 auto;
   min-height: auto;
   padding-top: clamp(92px, 9.4vw, 142px);
   padding-bottom: clamp(112px, 12.6vw, 176px);
