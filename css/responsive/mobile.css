@@ -99,6 +99,21 @@
     width: 84px;
   }
 
+  .about-title {
+    width: 100%;
+    margin-left: 0;
+    min-height: 0;
+    justify-self: center;
+    text-align: center;
+    font-size: clamp(2.2rem, 8.8vw, 2.9rem);
+    line-height: 1.04;
+  }
+
+  .about-title .section-title-link {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
   .project-row,
   .project-row.reverse {
     margin-bottom: 88px;
