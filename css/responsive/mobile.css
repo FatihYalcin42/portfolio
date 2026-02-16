@@ -8,6 +8,10 @@
     gap: 14px;
   }
 
+  .site-menu-lang {
+    padding: 0 16px 44px;
+  }
+
   .site-menu-link {
     min-height: 98px;
     padding: 20px 14px 24px 22px;

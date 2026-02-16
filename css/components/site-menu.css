@@ -91,3 +91,11 @@ body.menu-open .site-menu {
 .site-menu-link:focus-visible {
   outline: none;
 }
+
+.site-menu-lang {
+  width: min(100%, var(--max-width));
+  margin: 0 auto;
+  padding: 0 24px 56px;
+  display: none;
+  justify-content: center;
+}

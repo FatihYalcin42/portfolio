@@ -3,10 +3,19 @@
     padding: 72px 20px;
   }
 
+  .topbar-actions > .lang-toggle {
+    display: none;
+  }
+
   .site-menu-nav {
     padding: 102px 20px 70px;
     justify-content: stretch;
     gap: 18px;
+  }
+
+  .site-menu-lang {
+    display: flex;
+    padding: 0 20px 52px;
   }
 
   .site-menu-link {
