@@ -165,7 +165,23 @@
   }
 
   .project-hover-arrow {
-    display: none;
+    display: block;
+    top: auto;
+    right: auto;
+    left: 50%;
+    bottom: calc(-32px - var(--project-frame-offset));
+    width: 68px;
+    height: 68px;
+    --project-arrow-shift-x: -50%;
+    --project-arrow-shift-y: 0;
+    --project-arrow-base-rotate: 18deg;
+    --project-arrow-active-rotate: 135deg;
+    --project-arrow-flip: 1;
+  }
+
+  .project-card-image-right .project-hover-arrow {
+    left: 50%;
+    right: auto;
   }
 
   .project-row .project-hover-info {
@@ -219,6 +235,24 @@
   .project-row:focus-within .project-main-image {
     filter: grayscale(100%);
     transform: scale(0.94);
+  }
+
+  .project-row:hover .project-hover-arrow,
+  .project-row:focus-within .project-hover-arrow {
+    opacity: 0;
+    transform: translate(var(--project-arrow-shift-x), var(--project-arrow-shift-y))
+      rotate(var(--project-arrow-base-rotate))
+      scaleX(var(--project-arrow-flip))
+      scale(var(--project-arrow-base-scale));
+  }
+
+  .project-row.is-open .project-hover-arrow,
+  .project-row.is-inview .project-hover-arrow {
+    opacity: 1;
+    transform: translate(var(--project-arrow-shift-x), var(--project-arrow-shift-y))
+      rotate(var(--project-arrow-active-rotate))
+      scaleX(var(--project-arrow-flip))
+      scale(var(--project-arrow-active-scale));
   }
 
   .project-row.is-inview .project-main-image {

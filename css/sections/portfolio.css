@@ -118,14 +118,25 @@
 }
 
 .project-hover-arrow {
+  --project-arrow-shift-x: 0;
+  --project-arrow-shift-y: -50%;
+  --project-arrow-base-rotate: 120deg;
+  --project-arrow-active-rotate: 0deg;
+  --project-arrow-flip: 1;
+  --project-arrow-base-scale: 0.92;
+  --project-arrow-active-scale: 1;
   position: absolute;
   top: 50%;
   right: calc(-38px - var(--project-frame-offset));
   width: 76px;
   height: 76px;
   opacity: 0;
-  transform: translateY(-50%) scale(0.92);
-  transition: opacity 120ms ease, transform 120ms ease;
+  transform: translate(var(--project-arrow-shift-x), var(--project-arrow-shift-y))
+    rotate(var(--project-arrow-base-rotate))
+    scaleX(var(--project-arrow-flip))
+    scale(var(--project-arrow-base-scale));
+  transform-origin: center;
+  transition: opacity 140ms ease, transform 280ms cubic-bezier(0.2, 0.86, 0.28, 1);
   pointer-events: none;
   z-index: 3;
 }
@@ -133,7 +144,9 @@
 .project-card-image-right .project-hover-arrow {
   right: auto;
   left: calc(-38px - var(--project-frame-offset));
-  transform: translateY(-50%) scaleX(-1) scale(0.92);
+  --project-arrow-flip: -1;
+  --project-arrow-base-rotate: -120deg;
+  --project-arrow-active-rotate: 0deg;
 }
 
 .project-hover-info {
@@ -233,12 +246,10 @@
 .project-row:hover .project-hover-arrow,
 .project-row:focus-within .project-hover-arrow {
   opacity: 1;
-  transform: translateY(-50%) scale(1);
-}
-
-.project-row.reverse:hover .project-hover-arrow,
-.project-row.reverse:focus-within .project-hover-arrow {
-  transform: translateY(-50%) scaleX(-1) scale(1);
+  transform: translate(var(--project-arrow-shift-x), var(--project-arrow-shift-y))
+    rotate(var(--project-arrow-active-rotate))
+    scaleX(var(--project-arrow-flip))
+    scale(var(--project-arrow-active-scale));
 }
 
 .project-count-top {

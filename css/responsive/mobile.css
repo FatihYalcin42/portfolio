@@ -110,6 +110,12 @@
     max-width: 354px;
   }
 
+  .project-hover-arrow {
+    width: 62px;
+    height: 62px;
+    bottom: calc(-28px - var(--project-frame-offset));
+  }
+
   .project-row .project-count-top {
     justify-self: end;
   }
@@ -324,6 +330,12 @@
     --project-frame-offset: 10px;
     width: min(100%, 284px);
   }
+
+  .project-hover-arrow {
+    width: 56px;
+    height: 56px;
+    bottom: calc(-24px - var(--project-frame-offset));
+  }
 }
 
 @media (max-width: 340px) {
@@ -351,6 +363,12 @@
   .project-image-frame {
     --project-frame-offset: 8px;
     width: min(100%, 258px);
+  }
+
+  .project-hover-arrow {
+    width: 52px;
+    height: 52px;
+    bottom: calc(-22px - var(--project-frame-offset));
   }
 
   .hero-meta {
