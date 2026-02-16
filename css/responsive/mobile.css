@@ -278,6 +278,7 @@
     text-align: center;
     min-height: 0;
     font-size: clamp(2.25rem, 11.8vw, 3.1rem);
+    line-height: 1.04;
   }
 
   .about-copy p,
@@ -293,7 +294,35 @@
 
   .about-photo {
     justify-self: center;
+    margin-inline: auto;
     width: min(100%, 320px);
+  }
+
+  .about-title .section-title-link {
+    white-space: normal;
+  }
+
+  .portfolio h2 {
+    width: 100%;
+    min-height: 0;
+    font-size: clamp(2.05rem, 11vw, 2.55rem);
+    line-height: 1.02;
+  }
+
+  .project-row .project-card-image,
+  .project-row.reverse .project-card-image {
+    max-width: 320px;
+    justify-self: center;
+  }
+
+  .project-preview-image,
+  .project-preview-image-right {
+    justify-content: center;
+  }
+
+  .project-image-frame {
+    --project-frame-offset: 10px;
+    width: min(100%, 284px);
   }
 }
 
@@ -307,11 +336,21 @@
   }
 
   .about-title {
-    font-size: clamp(2rem, 12.4vw, 2.45rem);
+    font-size: clamp(1.85rem, 11.8vw, 2.2rem);
+    line-height: 1.06;
   }
 
   .about-photo {
     width: min(100%, 286px);
+  }
+
+  .portfolio h2 {
+    font-size: clamp(1.85rem, 11.4vw, 2.2rem);
+  }
+
+  .project-image-frame {
+    --project-frame-offset: 8px;
+    width: min(100%, 258px);
   }
 
   .hero-meta {
