@@ -1,4 +1,5 @@
 const CONTACT_FIELD_NAMES = ["name", "email", "message", "privacy"];
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i;
 const translate = (key) => (window.t ? window.t(key) : key);
 
 const getContactControls = (form) => ({
@@ -43,7 +44,7 @@ const validateName = (control) =>
   control.value.trim().length < 2 ? translate("error_name") : "";
 
 const validateEmail = (control) =>
-  !control.validity.valid ? translate("error_email") : "";
+  !EMAIL_PATTERN.test(control.value.trim()) ? translate("error_email") : "";
 
 const validateMessage = (control) =>
   control.value.trim().length < 10 ? translate("error_message") : "";
