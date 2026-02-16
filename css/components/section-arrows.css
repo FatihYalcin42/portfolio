@@ -51,6 +51,7 @@
 .about-arrow {
   --arrow-anchor-shift: clamp(-420px, -28vw, -260px);
   padding-right: 112px;
+  margin-bottom: clamp(30px, 4vw, 56px);
 }
 
 .portfolio-arrow {
