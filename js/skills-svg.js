@@ -45,13 +45,9 @@ const markMaterialDesignLabel = (svg) => {
 
 const markSvgTextShapes = (svg, textStartY) => {
   svg.querySelectorAll(SKILL_SHAPE_SELECTOR).forEach((shape) => {
-    try {
-      const box = shape.getBBox();
-      if (box.y >= textStartY) {
-        shape.classList.add("skill-svg-label");
-      }
-    } catch (error) {
-      // Ignore non-rendered shapes without a bounding box.
+    const box = shape.getBBox();
+    if (box.y >= textStartY) {
+      shape.classList.add("skill-svg-label");
     }
   });
 };
@@ -83,7 +79,6 @@ const inlineSkillImage = async (img) => {
   try {
     await inlineSkillImageCore(img);
   } catch (error) {
-    // Keep the original image if inline conversion fails.
   }
 };
 
