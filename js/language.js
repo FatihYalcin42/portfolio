@@ -27,18 +27,32 @@ const translations = {
     project_2: "Projekt 02 Screenshot",
     project_3: "Projekt 03 Screenshot",
     project_4: "Projekt 04 Screenshot",
+    project_5: "Projekt 05 Screenshot",
+    project_6: "Projekt 06 Screenshot",
     project_join_desc:
       "Task-Manager nach dem Kanban-Prinzip. Aufgaben per Drag-and-drop organisieren, Nutzer zuweisen und Kategorien strukturieren.",
     project_el_pollo_desc:
       "2D Jump-and-Run in Vanilla JavaScript mit Charakteranimationen, Bossfight-Logik und Soundeffekten.",
     project_pokedex_desc:
       "Pokedex mit externer API: Pokemon laden, filtern und Detailansichten in einer klaren UI anzeigen.",
+    project_poll_app_desc:
+      "Interaktive Umfrage-App auf Basis von Angular mit klarer Nutzerfuehrung und integrierter Supabase-Anbindung. Projektdetails und technische Links werden noch ergänzt.",
+    project_memory_desc:
+      "Interaktives Memory-Spiel auf Basis von Angular mit klarer Nutzerfuehrung. Projektdetails und technische Links werden noch ergänzt.",
+    project_code_a_cuisine_desc:
+      "KI-gestuetzter Rezeptgenerator auf Basis von Angular mit integrierten n8n-Workflows und Firebase-Anbindung. Projektdetails und technische Links werden noch ergänzt.",
     project_join_github_aria: "Join Repository auf GitHub",
     project_el_pollo_github_aria: "El Pollo Loco Repository auf GitHub",
     project_pokedex_github_aria: "Pokedex Repository auf GitHub",
+    project_poll_app_github_aria: "Poll App Repository auf GitHub",
+    project_memory_github_aria: "Memory Repository auf GitHub",
+    project_code_a_cuisine_github_aria: "Code à Cuisine Repository auf GitHub",
     project_join_live_aria: "Join Live Test öffnen",
     project_el_pollo_live_aria: "El Pollo Loco Live Test öffnen",
     project_pokedex_live_aria: "Pokedex Live Test öffnen",
+    project_poll_app_live_aria: "Poll App Live Test öffnen",
+    project_memory_live_aria: "Memory Live Test öffnen",
+    project_code_a_cuisine_live_aria: "Code à Cuisine Live Test öffnen",
     references_title: "Referenzen",
     references_lead: "Ich arbeite eigenstaendig und gleichzeitig teamorientiert. Kurzes Feedback aus Projekten:",
     quote_1: "\"Zuverlaessig, stark in der Umsetzung und mit gutem Blick fuer Details. Die Kommunikation war jederzeit klar.\"",
@@ -124,18 +138,32 @@ const translations = {
     project_2: "Project 02 Screenshot",
     project_3: "Project 03 Screenshot",
     project_4: "Project 04 Screenshot",
+    project_5: "Project 05 Screenshot",
+    project_6: "Project 06 Screenshot",
     project_join_desc:
       "Task manager inspired by the Kanban system. Organize tasks with drag and drop, assign users, and structure categories.",
     project_el_pollo_desc:
       "2D jump-and-run game in vanilla JavaScript with character animations, boss-fight logic, and sound effects.",
     project_pokedex_desc:
       "Pokedex powered by an external API: load Pokemon, filter results, and show clean detail views.",
+    project_poll_app_desc:
+      "Interactive polling app built with Angular, clear user flows, and an integrated Supabase setup. Project details and technical links will be added soon.",
+    project_memory_desc:
+      "Interactive memory game built with Angular and clear user flows. Project details and technical links will be added soon.",
+    project_code_a_cuisine_desc:
+      "AI-powered recipe generator built with Angular, integrated n8n workflows, and Firebase. Project details and technical links will be added soon.",
     project_join_github_aria: "Join repository on GitHub",
     project_el_pollo_github_aria: "El Pollo Loco repository on GitHub",
     project_pokedex_github_aria: "Pokedex repository on GitHub",
+    project_poll_app_github_aria: "Poll App repository on GitHub",
+    project_memory_github_aria: "Memory repository on GitHub",
+    project_code_a_cuisine_github_aria: "Code à Cuisine repository on GitHub",
     project_join_live_aria: "Open Join live test",
     project_el_pollo_live_aria: "Open El Pollo Loco live test",
     project_pokedex_live_aria: "Open Pokedex live test",
+    project_poll_app_live_aria: "Open Poll App live test",
+    project_memory_live_aria: "Open Memory live test",
+    project_code_a_cuisine_live_aria: "Open Code à Cuisine live test",
     references_title: "References",
     references_lead: "I work independently while staying highly collaborative. A few project references:",
     quote_1: "\"Reliable, strong execution, and a sharp eye for detail. Communication was clear throughout.\"",
