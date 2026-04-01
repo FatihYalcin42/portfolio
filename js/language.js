@@ -41,6 +41,8 @@ const translations = {
       "Interaktives Memory-Spiel auf Basis von Angular mit klarer Nutzerfuehrung.",
     project_code_a_cuisine_desc:
       "KI-gestuetzter Rezeptgenerator auf Basis von Angular mit integrierten n8n-Workflows und Firebase-Anbindung.",
+    project_link_github_label: "GitHub",
+    project_link_live_label: "Live-Test",
     project_join_github_aria: "Join Repository auf GitHub",
     project_el_pollo_github_aria: "El Pollo Loco Repository auf GitHub",
     project_pokedex_github_aria: "Pokedex Repository auf GitHub",
@@ -152,6 +154,8 @@ const translations = {
       "Interactive memory game built with Angular and clear user flows.",
     project_code_a_cuisine_desc:
       "AI-powered recipe generator built with Angular, integrated n8n workflows, and Firebase.",
+    project_link_github_label: "GitHub",
+    project_link_live_label: "Live Demo",
     project_join_github_aria: "Join repository on GitHub",
     project_el_pollo_github_aria: "El Pollo Loco repository on GitHub",
     project_pokedex_github_aria: "Pokedex repository on GitHub",
